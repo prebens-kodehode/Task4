@@ -42,8 +42,8 @@ main {
   background: var(--element-bg-color);
   border: 0.5em solid var(--border-color);
   border-radius: 1em;
-  width: 18em;
-  height: 18em;
+  width: 20rem;
+  height: 20rem;
   padding: 0.1em;
 }
 
@@ -92,8 +92,8 @@ section {
   justify-content: start;
   align-items: start;
   gap: 0.1rem;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .emoji {
