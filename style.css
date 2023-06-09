@@ -6,6 +6,9 @@
   --border-color: #393939;
   --button-active-color: #57cc99;
   --header-text-color: #e3efe4;
+  --emoji-color-light: #4ce2c7;
+  --emoji-color-medium: #36a18d;
+  --emoji-color-dark: #23695c;
 }
 
 body {
@@ -20,7 +23,8 @@ body {
 }
 
 h1,
-h3 {
+h3,
+p {
   color: var(--header-text-color);
   text-shadow: 0 0 0.5rem var(--border-color);
 }
@@ -40,7 +44,7 @@ main {
   border-radius: 1em;
   width: 18em;
   height: 18em;
-  padding: 0.5em;
+  padding: 0.1em;
 }
 
 section {
@@ -49,10 +53,11 @@ section {
   justify-content: center;
   margin: 1rem auto;
   max-width: 40rem;
+  gap: 0.5rem;
 }
 
 .property-button {
-  width: 8rem;
+  width: 7.5rem;
   height: 1.5rem;
   font-family: "Orbitron", sans-serif;
   font-size: 0.7rem;
@@ -73,7 +78,7 @@ section {
 .active {
   border: 0.12rem solid var(--button-active-color);
   box-shadow: 0 0 0.5rem var(--element-bg-color);
-  color: var(--button-active-color);
+  color: var(--emoji-color-dark);
   background: var(--element-bg-color);
 }
 
@@ -84,9 +89,9 @@ section {
 #flexbox-el {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: normal;
-  gap: 0.2em;
+  justify-content: start;
+  align-items: start;
+  gap: 0.1rem;
   width: 18rem;
   height: 18rem;
 }
@@ -99,26 +104,30 @@ section {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 0.5em;
-  border: 0.1em solid black;
+  border: 0.1em solid var(--border-color);
 }
 
 .emoji-1 {
-  background: #4ce2c7;
+  background: var(--emoji-color-light);
 }
 
 .emoji-2 {
-  background: #36a18d;
+  background: var(--emoji-color-medium);
 }
 
 .emoji-3 {
-  background: #23695c;
+  background: var(--emoji-color-dark);
 }
 
 .button-container {
-  width: 90vw;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 0.3rem;
+  background: var(--emoji-color-dark);
+  border: 0.2rem solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.4rem;
 }

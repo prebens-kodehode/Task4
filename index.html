@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Flexbox Visualizer">
-    <meta name="keywords" content="HTML, CSS, JavaScript, flexbox">
-    <meta name="author" content="Preben S">
+    <meta name="description" content="Flexbox Visualizer" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, flexbox" />
+    <meta name="author" content="Preben S" />
     <title>Flexbox Visualizer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,18 +20,19 @@
   <body>
     <header>
       <h1>Flexbox Visualizer</h1>
+      <p>See how flexbox settings affect your content</p>
     </header>
     <main>
       <div id="flexbox-el">
         <div class="emoji emoji-1">
-            <h2>&#128024</h2>
-          </div>
-          <div class="emoji emoji-2">
-            <h2>&#128053</h2>
-          </div>
-          <div class="emoji emoji-3">
-            <h2>&#128055</h2>
-          </div>
+          <h2>&#128024;</h2>
+        </div>
+        <div class="emoji emoji-2">
+          <h2>&#128053;</h2>
+        </div>
+        <div class="emoji emoji-3">
+          <h2>&#128055;</h2>
+        </div>
       </div>
     </main>
     <section>
@@ -68,19 +69,20 @@
       </div>
       <div class="button-container">
         <h3>Justify Content</h3>
+
         <button
           class="property-button active"
           data-property="justify-content"
-          data-value="normal"
+          data-value="start"
         >
-          Normal
+          Start
         </button>
         <button
           class="property-button"
           data-property="justify-content"
-          data-value="center"
+          data-value="end"
         >
-          Center
+          End
         </button>
         <button
           class="property-button"
@@ -106,6 +108,13 @@
         <button
           class="property-button"
           data-property="justify-content"
+          data-value="center"
+        >
+          Center
+        </button>
+        <button
+          class="property-button"
+          data-property="justify-content"
           data-value="space-around"
         >
           Space-Around
@@ -123,16 +132,16 @@
         <button
           class="property-button active"
           data-property="align-items"
-          data-value="normal"
+          data-value="start"
         >
-          Normal
+          Start
         </button>
         <button
           class="property-button"
           data-property="align-items"
-          data-value="center"
+          data-value="end"
         >
-          Center
+          End
         </button>
         <button
           class="property-button"
@@ -147,6 +156,13 @@
           data-value="flex-end"
         >
           Flex-End
+        </button>
+        <button
+          class="property-button"
+          data-property="align-items"
+          data-value="center"
+        >
+          Center
         </button>
       </div>
     </section>
