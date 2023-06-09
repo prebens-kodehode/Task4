@@ -1,0 +1,120 @@
+:root {
+  --main-bg-color: #246b6c;
+  /* #246b6c */
+  --font-color: #1b1b1b;
+  --element-bg-color: #c7f9cc;
+  --border-color: #393939;
+  --button-active-color: #57cc99;
+  --header-text-color: #e3efe4;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: var(--main-bg-color) no-repeat;
+  background-size: cover;
+  font-family: "Orbitron", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  color: var(--font-color);
+}
+
+h1,
+h3 {
+  color: var(--header-text-color);
+  text-shadow: 0 0 0.5rem var(--border-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+main {
+  margin: auto;
+  background: var(--element-bg-color);
+  border: 0.5em solid var(--border-color);
+  border-radius: 1em;
+  width: 18em;
+  height: 18em;
+  padding: 0.5em;
+}
+
+section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 40rem;
+}
+
+.property-button {
+  width: 8rem;
+  height: 1.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: transform 300ms;
+  color: #1b1b1b;
+}
+
+.property-button:hover {
+  transform: scale(1.1);
+  transition: transform 150ms;
+  box-shadow: 0 0 0.5rem var(--border-color);
+}
+
+.active {
+  border: 0.12rem solid var(--button-active-color);
+  box-shadow: 0 0 0.5rem var(--element-bg-color);
+  color: var(--button-active-color);
+  background: var(--element-bg-color);
+}
+
+.active:hover {
+  box-shadow: 0 0 0.5rem #fcda9c;
+}
+
+#flexbox-el {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: normal;
+  gap: 0.2em;
+  width: 18rem;
+  height: 18rem;
+}
+
+.emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.1em;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5em;
+  border: 0.1em solid black;
+}
+
+.emoji-1 {
+  background: #4ce2c7;
+}
+
+.emoji-2 {
+  background: #36a18d;
+}
+
+.emoji-3 {
+  background: #23695c;
+}
+
+.button-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+}
