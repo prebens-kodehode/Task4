@@ -1,6 +1,5 @@
 :root {
   --main-bg-color: #246b6c;
-  /* #246b6c */
   --font-color: #1b1b1b;
   --element-bg-color: #c7f9cc;
   --border-color: #393939;
@@ -35,10 +34,11 @@ h3 {
 
 h2 {
   font-size: 2.5rem;
+  text-shadow: 0 0 0.1rem var(--header-text-color);
 }
 
 main {
-  margin: auto;
+  margin: auto auto 4rem auto;
   background: var(--element-bg-color);
   border: 0.5em solid var(--border-color);
   border-radius: 1em;
@@ -83,7 +83,7 @@ section {
 }
 
 .active:hover {
-  box-shadow: 0 0 0.5rem #fcda9c;
+  box-shadow: 0 0 0.5rem var(--element-bg-color);
 }
 
 #flexbox-el {
@@ -107,27 +107,92 @@ section {
   border: 0.1em solid var(--border-color);
 }
 
-.emoji-1 {
+.emoji-bg-1 {
   background: var(--emoji-color-light);
 }
 
-.emoji-2 {
+.emoji-bg-2 {
   background: var(--emoji-color-medium);
 }
 
-.emoji-3 {
+.emoji-bg-3 {
   background: var(--emoji-color-dark);
 }
 
 .button-container {
-  width: fit-content;
+  width: 10.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 0.3rem;
-  background: var(--emoji-color-dark);
-  border: 0.2rem solid var(--border-color);
+  /* background: var(--emoji-color-dark); */
+  /* border: 0.2rem solid var(--border-color);
   border-radius: 0.5rem;
-  padding: 0.4rem;
+  padding: 0.4rem; */
+}
+
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-container p {
+  width: 5rem;
+  font-size: 1.2rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  margin: 1.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--element-bg-color);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  border-radius: 1rem;
+}
+
+.checkbox:before {
+  position: absolute;
+  content: "";
+  height: 1.7rem;
+  width: 1.7rem;
+  left: 0.2rem;
+  bottom: 0.175rem;
+  background-color: var(--border-color);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  border-radius: 50%;
+}
+
+input:checked + .checkbox {
+  background-color: var(--button-active-color);
+}
+
+input:focus + .checkbox {
+  box-shadow: 0 0 1px var(--button-active-color);
+}
+
+input:checked + .checkbox:before {
+  -webkit-transform: translateX(1.9rem);
+  -ms-transform: translateX(1.9rem);
+  transform: translateX(1.9rem);
 }

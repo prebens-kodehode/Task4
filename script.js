@@ -1,6 +1,11 @@
 const buttons = document.querySelectorAll(".property-button");
 const flexboxEl = document.getElementById("flexbox-el");
 
+const useNumbers = document.getElementById("usenumbers-el");
+const emoji1El = document.getElementById("emoji-1");
+const emoji2El = document.getElementById("emoji-2");
+const emoji3El = document.getElementById("emoji-3");
+
 buttons.forEach((button) => {
   button.addEventListener("click", buttonClick);
 });
@@ -27,3 +32,16 @@ function buttonClick(event) {
   // changes the value of the corresponding css property
   flexboxEl.style[property] = value;
 }
+
+// changes between emojis and numbers when the switch is flipped
+useNumbers.addEventListener("change", function () {
+  if (useNumbers.checked === true) {
+    emoji1El.textContent = 1;
+    emoji2El.textContent = 2;
+    emoji3El.textContent = 3;
+  } else {
+    emoji1El.innerHTML = "&#128024;";
+    emoji2El.innerHTML = "&#128053;";
+    emoji3El.innerHTML = "&#128055;";
+  }
+});
