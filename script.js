@@ -14,8 +14,9 @@ function buttonClick(event) {
   // stores the css property from the clicked button
   const clickedProperty = event.target.dataset.property;
 
+  //checks which group of buttons is clicked to only change the active class in that group
   buttons.forEach((button) => {
-    // checks if the property of the button matches the property of the clicked button
+    // checks if the property of the buttons matches the property of the clicked button
     if (button.dataset.property === clickedProperty) {
       // removes the ".active" class from matching buttons
       button.classList.remove("active");
