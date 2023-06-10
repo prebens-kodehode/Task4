@@ -43,7 +43,10 @@ h2 {
 
 main {
   margin: auto auto 4rem auto;
-  background: var(--element-bg-color);
+  background: radial-gradient(
+    var(--header-text-color),
+    var(--element-bg-color)
+  );
   border: 0.5rem solid var(--border-color);
   border-radius: 1rem;
   padding: 0.1rem;
