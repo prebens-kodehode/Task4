@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #246b6c;
+  --main-bg-color: #205d5e;
   --font-color: #1b1b1b;
   --element-bg-color: #c7f9cc;
   --border-color: #393939;
@@ -21,11 +21,15 @@ body {
   color: var(--font-color);
 }
 
+h1 {
+  text-decoration: underline;
+}
+
 h1,
 h3,
 p {
   color: var(--header-text-color);
-  text-shadow: 0 0 0.5rem var(--border-color);
+  text-shadow: 0 0 0.5rem var(--font-color);
 }
 
 h3 {
@@ -97,7 +101,8 @@ section {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 0.5rem;
-  border: 0.1em solid var(--border-color);
+  border: 0.2rem solid var(--border-color);
+  box-shadow: 0 0.2rem 0.5rem var(--font-color);
 }
 
 .emoji-bg-1 {
@@ -165,7 +170,7 @@ input:checked + .checkbox {
 }
 
 input:focus + .checkbox {
-  box-shadow: 0 0 1px var(--button-active-color);
+  box-shadow: 0 0 0.1rem var(--button-active-color);
 }
 
 input:checked + .checkbox:before {
