@@ -40,22 +40,20 @@ h2 {
 main {
   margin: auto auto 4rem auto;
   background: var(--element-bg-color);
-  border: 0.5em solid var(--border-color);
-  border-radius: 1em;
-  width: 20rem;
-  height: 20rem;
-  padding: 0.1em;
+  border: 0.5rem solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0.1rem;
 }
 
+/* button section */
 section {
   width: 100vw;
-  display: flex;
-  justify-content: center;
   margin: 1rem auto;
   max-width: 40rem;
   gap: 0.5rem;
 }
 
+/* button styling */
 .property-button {
   width: 7.5rem;
   height: 1.5rem;
@@ -63,7 +61,7 @@ section {
   font-size: 0.7rem;
   font-weight: 700;
   border: none;
-  border-radius: 0.3em;
+  border-radius: 0.3rem;
   cursor: pointer;
   transition: transform 300ms;
   color: #1b1b1b;
@@ -86,24 +84,19 @@ section {
   box-shadow: 0 0 0.5rem var(--element-bg-color);
 }
 
+/* main flexbox */
 #flexbox-el {
-  display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: start;
   gap: 0.1rem;
-  width: 20rem;
-  height: 20rem;
 }
 
 .emoji {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 0.1em;
+  line-height: 0.1rem;
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   border: 0.1em solid var(--border-color);
 }
 
@@ -119,25 +112,15 @@ section {
   background: var(--emoji-color-dark);
 }
 
+/* button columns */
 .button-container {
   width: 10.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   gap: 0.3rem;
-  /* background: var(--emoji-color-dark); */
-  /* border: 0.2rem solid var(--border-color);
-  border-radius: 0.5rem;
-  padding: 0.4rem; */
 }
 
-.switch-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* emoji/number switch */
 .switch-container p {
   width: 5rem;
   font-size: 1.2rem;
@@ -158,28 +141,22 @@ section {
 }
 
 .checkbox {
-  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: var(--element-bg-color);
-  -webkit-transition: 400ms;
-  transition: 400ms;
   border-radius: 1rem;
 }
 
 .checkbox:before {
-  position: absolute;
   content: "";
   height: 1.7rem;
   width: 1.7rem;
   left: 0.2rem;
   bottom: 0.175rem;
   background-color: var(--border-color);
-  -webkit-transition: 400ms;
-  transition: 400ms;
   border-radius: 50%;
 }
 
@@ -195,4 +172,38 @@ input:checked + .checkbox:before {
   -webkit-transform: translateX(1.9rem);
   -ms-transform: translateX(1.9rem);
   transform: translateX(1.9rem);
+}
+
+.checkbox,
+.checkbox:before {
+  position: absolute;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+/* collection of elements that use the same property */
+section,
+#flexbox-el,
+.emoji,
+.button-container,
+.switch-container {
+  display: flex;
+}
+
+main,
+#flexbox-el {
+  width: 20rem;
+  height: 20rem;
+}
+
+section,
+.emoji,
+.switch-container {
+  justify-content: center;
+}
+
+.emoji,
+.button-container,
+.switch-container {
+  align-items: center;
 }
