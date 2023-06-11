@@ -41,7 +41,7 @@ useNumbers.addEventListener("change", function () {
     emoji2El.textContent = 2;
     emoji3El.textContent = 3;
   } else {
-    emoji1El.innerHTML = "&#128024;";
+    emoji1El.innerHTML = "&#128048;";
     emoji2El.innerHTML = "&#128053;";
     emoji3El.innerHTML = "&#128055;";
   }
