@@ -236,3 +236,9 @@ main,
 .switch-container {
   align-items: center;
 }
+
+@media (max-width: 568px) {
+  :root {
+    font-size: 0.8rem;
+  }
+}
