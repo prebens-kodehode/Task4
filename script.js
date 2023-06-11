@@ -34,7 +34,7 @@ function buttonClick(event) {
   flexboxEl.style[property] = value;
 }
 
-// changes between emojis and numbers when the switch is flipped
+// changes between emojis and numbers when the switch is toggled
 useNumbers.addEventListener("change", function () {
   if (useNumbers.checked === true) {
     emoji1El.textContent = 1;
