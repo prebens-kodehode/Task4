@@ -22,8 +22,18 @@ body {
   color: var(--font-color);
 }
 
+header {
+  padding: 1rem;
+}
+
+header p {
+  line-height: 0.5rem;
+}
+
 h1 {
   text-decoration: underline;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 h1,
@@ -195,6 +205,13 @@ input:checked + .checkbox:before {
 }
 
 /* collection of elements that use the same property */
+header,
+main,
+section {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 section,
 #flexbox-el,
 .emoji,
