@@ -28,19 +28,26 @@ header {
 
 header p {
   line-height: 1rem;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.1rem;
 }
 
 h1 {
-  text-decoration: underline;
+  letter-spacing: 0.1rem;
   font-size: 1.6rem;
   margin: 0;
+  color: var(--element-bg-color);
 }
 
 h1,
 h3,
 p {
-  color: var(--header-text-color);
   text-shadow: 0 0 0.5rem var(--font-color);
+}
+
+h3,
+p {
+  color: var(--header-text-color);
 }
 
 h3 {
@@ -85,6 +92,7 @@ section {
   cursor: pointer;
   transition: transform 300ms;
   color: #1b1b1b;
+  letter-spacing: 0.03rem;
 }
 
 .property-button:hover {
